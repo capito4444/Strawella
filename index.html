@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Strawella – Fresas con Crema</title>
+<link rel="icon" type="image/jpeg" href="data:image/jpeg;base64,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">
+<link rel="shortcut icon" type="image/jpeg" href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgICAgMCAgIDAwMDBAYEBAQEBAgGBgUGCQgKCgkICQkKDA8MCgsOCwkJDRENDg8QEBEQCgwSExIQEw8QEBD/wAARCABAAEADASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAAYEBQcDAv/EAC8QAAIBAwMCBAQHAAAAAAAAAAECAwQFERIxBiFBUWETFCIyUmJxgZGhwdH/xAAYAQADAQEAAAAAAAAAAAAAAAACAwQBBf/EACQRAAICAQQBBQEAAAAAAAAAAAABAgMRBBIhMUFR8BNhcf/aAAwDAQACEQMRAD8A7UAAAAABia1rl06eadMtyJ4pHxfVxz5cLnr1xn1Acm/XN60XdEpVa0PdSjR73HSWfXp3pqVp3/Uu93Sbk/SLm7aLXt1m28PnftnC29bTlpuvOvHinJSl6Z+VjPPlkDrAAAAAB5ZrW+qOmfQWmxNze5cP3JjqJ48+fh5ZeW8+Weu3xBq1fVa9qddPakpe5ShOlHEoZTW1vd7yW36rOevQ9G1bddtUtlKnJJNNq8t9VKfQmAAAAA8uVwqYR5YAtNE1apqSqRnNOcE+11Rwnxz25+z5GmAAAAAAAAAAAAAAAAAp9dvHPWNLSqVKcIVXvlKOE43pPn5p5t+IA//9k=">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --pink:       #f7a8c4;
+    --pink-light: #fce4ef;
+    --pink-deep:  #e8739a;
+    --cream:      #fff6f9;
+    --mint:       #b8eed6;
+    --lavender:   #d4b8f0;
+    --peach:      #ffd4b8;
+    --gold:       #f5c97a;
+    --text:       #5a2d3e;
+    --text-soft:  #9a6075;
+  }
+  *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Nunito', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    overflow-x: hidden;
+  }
+
+  /* ── SCROLLBAR ── */
+  ::-webkit-scrollbar { width: 8px; }
+  ::-webkit-scrollbar-track { background: var(--pink-light); }
+  ::-webkit-scrollbar-thumb { background: var(--pink); border-radius: 99px; }
+
+  /* ── FLOATING BUBBLES ── */
+  .bubbles-bg {
+    position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    overflow: hidden;
+  }
+  .bubble {
+    position: absolute; border-radius: 50%;
+    opacity: .18; animation: floatBubble linear infinite;
+  }
+  @keyframes floatBubble {
+    0%   { transform: translateY(110vh) scale(1); opacity: .18; }
+    100% { transform: translateY(-20vh) scale(1.2); opacity: 0; }
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top:0; width:100%; z-index: 999;
+    background: rgba(255,246,249,.88);
+    backdrop-filter: blur(14px);
+    border-bottom: 1.5px solid var(--pink-light);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: .8rem 3rem;
+    animation: slideDown .7s ease;
+  }
+  @keyframes slideDown { from { transform: translateY(-100%); } to { transform: translateY(0); } }
+
+  .nav-logo {
+    display: flex; align-items: center; gap: .7rem;
+    text-decoration: none;
+  }
+  .nav-logo img {
+    height: 48px; border-radius: 50%;
+    filter: drop-shadow(0 2px 8px var(--pink));
+  }
+  .nav-logo span {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem; color: var(--pink-deep);
+    letter-spacing: 1px;
+  }
+  .nav-links { display: flex; gap: 1.8rem; list-style: none; }
+  .nav-links a {
+    text-decoration: none; font-weight: 600; font-size: .9rem;
+    color: var(--text-soft); transition: color .3s;
+    position: relative;
+  }
+  .nav-links a::after {
+    content:''; position:absolute; bottom:-3px; left:0; right:100%;
+    height:2px; background: var(--pink-deep); transition: right .3s;
+  }
+  .nav-links a:hover { color: var(--pink-deep); }
+  .nav-links a:hover::after { right:0; }
+
+  /* ── HERO ── */
+  #hero {
+    min-height: 100vh; position: relative; z-index: 1;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    text-align: center; padding: 6rem 2rem 4rem;
+    background:
+      radial-gradient(ellipse 80% 60% at 50% 0%, #fce4ef 0%, transparent 70%),
+      radial-gradient(ellipse 40% 40% at 85% 80%, #d4b8f0 0%, transparent 60%),
+      var(--cream);
+  }
+  .hero-badge {
+    display: inline-block;
+    background: var(--pink);
+    color: #fff;
+    font-size: .75rem; font-weight: 700; letter-spacing: 2px;
+    padding: .35rem 1.2rem; border-radius: 99px;
+    margin-bottom: 1.2rem;
+    animation: fadeUp .8s .2s both;
+  }
+  #hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3rem, 8vw, 6rem);
+    line-height: 1.1;
+    color: var(--text);
+    animation: fadeUp .8s .3s both;
+  }
+  #hero h1 em { color: var(--pink-deep); font-style: italic; }
+  #hero p {
+    max-width: 520px; font-size: 1.1rem; color: var(--text-soft);
+    margin: 1.2rem auto; animation: fadeUp .8s .4s both;
+  }
+  .hero-btns {
+    display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;
+    animation: fadeUp .8s .5s both;
+  }
+  .btn {
+    padding: .85rem 2rem; border-radius: 99px; font-weight: 700; font-size: .95rem;
+    cursor: pointer; border: none; transition: transform .2s, box-shadow .2s;
+    text-decoration: none; display: inline-block;
+  }
+  .btn:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(232,115,154,.35); }
+  .btn-primary { background: var(--pink-deep); color: #fff; }
+  .btn-outline { background: transparent; border: 2px solid var(--pink-deep); color: var(--pink-deep); }
+
+  /* VIDEO */
+  .hero-video-wrap {
+    margin-top: 3rem;
+    border-radius: 24px; overflow: hidden;
+    box-shadow: 0 20px 60px rgba(232,115,154,.25);
+    max-width: 420px; width: 100%;
+    animation: fadeUp .8s .6s both;
+    border: 4px solid var(--pink-light);
+  }
+  .hero-video-wrap video { width: 100%; display: block; }
+
+  /* ── FLOATING STRAWBERRIES ── */
+  .strawberry-float {
+    position: absolute; font-size: 2rem;
+    animation: swayFloat 6s ease-in-out infinite;
+    pointer-events: none;
+  }
+  @keyframes swayFloat {
+    0%,100% { transform: translateY(0) rotate(-8deg); }
+    50%      { transform: translateY(-18px) rotate(8deg); }
+  }
+
+  /* ── SECTIONS ── */
+  section { position: relative; z-index: 1; padding: 5rem 2rem; }
+  .section-title {
+    text-align: center; margin-bottom: 3rem;
+  }
+  .section-title h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: var(--text);
+  }
+  .section-title h2 span { color: var(--pink-deep); }
+  .section-title p {
+    color: var(--text-soft); margin-top: .6rem; font-size: 1rem;
+  }
+  .divider {
+    width: 60px; height: 4px; background: linear-gradient(90deg, var(--pink), var(--lavender));
+    border-radius: 99px; margin: .8rem auto 0;
+  }
+
+  /* ── CATALOG TABS ── */
+  #catalogo { background: var(--pink-light); }
+  .tabs {
+    display: flex; gap: .8rem; justify-content: center; flex-wrap: wrap;
+    margin-bottom: 2.5rem;
+  }
+  .tab-btn {
+    padding: .6rem 1.6rem; border-radius: 99px; font-weight: 700; font-size: .9rem;
+    border: 2px solid var(--pink);
+    background: transparent; color: var(--pink-deep);
+    cursor: pointer; transition: all .25s;
+  }
+  .tab-btn.active, .tab-btn:hover {
+    background: var(--pink-deep); color: #fff; border-color: var(--pink-deep);
+  }
+  .tab-panel { display: none; }
+  .tab-panel.active { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px,1fr)); gap: 1.5rem; }
+
+  .card {
+    background: #fff; border-radius: 20px;
+    padding: 1.5rem; text-align: center;
+    box-shadow: 0 4px 20px rgba(232,115,154,.13);
+    transition: transform .3s, box-shadow .3s;
+    position: relative; overflow: hidden;
+  }
+  .card::before {
+    content:''; position:absolute; inset:0;
+    background: linear-gradient(135deg, var(--pink-light) 0%, transparent 60%);
+    opacity: 0; transition: opacity .3s;
+  }
+  .card:hover { transform: translateY(-6px); box-shadow: 0 12px 32px rgba(232,115,154,.25); }
+  .card:hover::before { opacity: 1; }
+
+  .card-emoji { font-size: 3rem; display: block; margin-bottom: .8rem;
+    animation: wobble 3s ease-in-out infinite; }
+  @keyframes wobble {
+    0%,100%{transform:rotate(-5deg);}50%{transform:rotate(5deg);}
+  }
+  .card h3 { font-family:'Playfair Display',serif; font-size:1.2rem; margin-bottom:.4rem; }
+  .card p { color: var(--text-soft); font-size: .85rem; margin-bottom: .8rem; }
+  .card-price {
+    display: inline-block;
+    background: var(--pink-deep); color: #fff;
+    padding: .3rem 1rem; border-radius: 99px; font-weight: 700; font-size: .9rem;
+  }
+  .badge-premium {
+    position: absolute; top: .8rem; right: .8rem;
+    background: linear-gradient(135deg, var(--gold), #ffaa40);
+    color: #fff; font-size: .65rem; font-weight: 700; letter-spacing:1px;
+    padding: .2rem .7rem; border-radius: 99px;
+  }
+  .badge-special {
+    position: absolute; top: .8rem; right: .8rem;
+    background: linear-gradient(135deg, var(--lavender), #a78bd4);
+    color: #fff; font-size: .65rem; font-weight: 700; letter-spacing:1px;
+    padding: .2rem .7rem; border-radius: 99px;
+  }
+
+  /* ── TOPPINGS ── */
+  #toppings { background: var(--cream); }
+  .topping-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(180px,1fr));
+    gap: 1.2rem; max-width: 900px; margin: 0 auto;
+  }
+  .topping-chip {
+    background: #fff; border-radius: 16px;
+    padding: 1.2rem .8rem; text-align: center;
+    box-shadow: 0 3px 14px rgba(232,115,154,.1);
+    transition: transform .25s, box-shadow .25s;
+    cursor: default;
+  }
+  .topping-chip:hover {
+    transform: translateY(-4px) scale(1.04);
+    box-shadow: 0 8px 24px rgba(232,115,154,.22);
+  }
+  .topping-chip .t-icon { font-size: 2.2rem; display: block; margin-bottom: .5rem; }
+  .topping-chip .t-name { font-weight: 700; font-size: .9rem; }
+  .topping-chip .t-price { color: var(--pink-deep); font-weight: 600; font-size: .8rem; }
+
+  /* ── FIND US ── */
+  #ubicacion { background: var(--pink-light); }
+  .ubicacion-inner {
+    max-width: 800px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem;
+    align-items: center;
+  }
+  .map-placeholder {
+    border-radius: 20px; overflow: hidden;
+    box-shadow: 0 8px 32px rgba(232,115,154,.18);
+    aspect-ratio: 4/3; background: var(--pink); position: relative;
+  }
+  .map-placeholder iframe {
+    width: 100%; height: 100%; border: none; border-radius: 20px;
+  }
+  .map-placeholder .map-fallback {
+    width: 100%; height: 100%; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; color: #fff;
+    font-size: 1rem; font-weight: 600; gap: .5rem;
+  }
+  .info-card {
+    background: #fff; border-radius: 20px; padding: 2rem;
+    box-shadow: 0 4px 20px rgba(232,115,154,.12);
+  }
+  .info-card h3 { font-family:'Playfair Display',serif; font-size:1.4rem; margin-bottom:1.2rem; }
+  .info-row { display: flex; align-items: flex-start; gap:.8rem; margin-bottom:1rem; }
+  .info-icon { font-size:1.4rem; flex-shrink:0; margin-top:.1rem; }
+  .info-row p { color: var(--text-soft); font-size:.9rem; line-height:1.5; }
+
+  /* ── ABOUT ── */
+  #nosotros { background: var(--cream); }
+  .about-inner {
+    max-width: 860px; margin: 0 auto;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem;
+  }
+  .about-card {
+    background: #fff; border-radius: 20px; padding: 2.2rem;
+    box-shadow: 0 4px 20px rgba(232,115,154,.12);
+    transition: transform .3s;
+  }
+  .about-card:hover { transform: translateY(-4px); }
+  .about-card h3 {
+    font-family:'Playfair Display',serif; font-size:1.4rem;
+    margin-bottom:1rem; color: var(--pink-deep);
+  }
+  .about-card p { color: var(--text-soft); line-height: 1.7; font-size:.95rem; }
+
+  /* ── TEAM ── */
+  #equipo { background: var(--pink-light); }
+  .team-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    gap: 1.5rem; max-width: 1000px; margin: 0 auto;
+  }
+  .member-card {
+    background: #fff; border-radius: 20px; padding: 1.8rem 1.2rem;
+    text-align: center; box-shadow: 0 4px 20px rgba(232,115,154,.1);
+    transition: transform .3s, box-shadow .3s;
+    position: relative; overflow: hidden;
+  }
+  .member-card::after {
+    content:''; position:absolute; bottom:0; left:0; right:0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--pink), var(--lavender));
+  }
+  .member-card:hover { transform: translateY(-6px); box-shadow: 0 12px 32px rgba(232,115,154,.22); }
+  .avatar {
+    width: 72px; height: 72px; border-radius: 50%;
+    background: linear-gradient(135deg, var(--pink-light), var(--lavender));
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.8rem; margin: 0 auto 1rem;
+    border: 3px solid var(--pink);
+  }
+  .member-card h4 { font-family:'Playfair Display',serif; font-size:1rem; }
+  .role-badge {
+    display: inline-block; margin-top: .4rem;
+    background: var(--pink-light); color: var(--pink-deep);
+    font-size: .72rem; font-weight: 700; padding: .2rem .8rem;
+    border-radius: 99px; letter-spacing:.5px;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--text);
+    color: rgba(255,255,255,.75);
+    text-align: center; padding: 2.5rem 2rem;
+    font-size: .85rem; position: relative; z-index: 1;
+  }
+  footer strong { color: var(--pink); font-family:'Playfair Display',serif; }
+  footer .social-row { display:flex; gap:1rem; justify-content:center; margin-bottom:1rem; }
+  footer .social-btn {
+    background: rgba(255,255,255,.12); border-radius: 99px;
+    padding: .4rem 1rem; color: #fff; text-decoration: none;
+    font-size: .8rem; font-weight: 600; transition: background .25s;
+  }
+  footer .social-btn:hover { background: var(--pink-deep); }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity:0; transform: translateY(28px); }
+    to   { opacity:1; transform: translateY(0); }
+  }
+  .reveal {
+    opacity: 0; transform: translateY(30px);
+    transition: opacity .7s ease, transform .7s ease;
+  }
+  .reveal.visible { opacity:1; transform: translateY(0); }
+
+  /* ── RESPONSIVE ── */
+  @media(max-width:680px) {
+    nav { padding: .7rem 1.2rem; }
+    .nav-links { display: none; }
+    .ubicacion-inner, .about-inner { grid-template-columns: 1fr; }
+    .hero-btns { flex-direction: column; align-items: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- FLOATING BUBBLES -->
+<div class="bubbles-bg" id="bubblesContainer"></div>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#hero">
+    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%23f7a8c4'/%3E%3Ctext x='50' y='68' text-anchor='middle' font-size='60' font-family='Georgia' fill='white'%3EZ%3C/text%3E%3C/svg%3E" alt="Strawella Logo">
+    <span>Strawella</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#catalogo">Catálogo</a></li>
+    <li><a href="#toppings">Toppings</a></li>
+    <li><a href="#ubicacion">Ubícanos</a></li>
+    <li><a href="#nosotros">Nosotros</a></li>
+    <li><a href="#equipo">Equipo</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <span class="strawberry-float" style="top:18%;left:8%;animation-delay:0s">🍓</span>
+  <span class="strawberry-float" style="top:60%;right:6%;animation-delay:1.5s">🍓</span>
+  <span class="strawberry-float" style="top:35%;right:14%;animation-delay:.8s;font-size:1.4rem">✨</span>
+  <span class="strawberry-float" style="top:75%;left:12%;animation-delay:2s;font-size:1.2rem">🌸</span>
+
+  <div class="hero-badge">🍓 Sabor que enamora</div>
+  <h1>La mejor<br><em>Fresa con Crema</em><br>de la ciudad</h1>
+  <p>Fresas frescas, cremas artesanales y toppings irresistibles. Un antojo para cada ocasión especial.</p>
+  <div class="hero-btns">
+    <a class="btn btn-primary" href="#catalogo">Ver Catálogo</a>
+    <a class="btn btn-outline" href="#ubicacion">Encuéntranos</a>
+  </div>
+
+  <div class="hero-video-wrap reveal">
+    <video autoplay muted loop playsinline>
+      <source src="/mnt/user-data/uploads/OIG1.mp4" type="video/mp4">
+      Tu navegador no soporta video HTML5.
+    </video>
+  </div>
+</section>
+
+<!-- CATÁLOGO -->
+<section id="catalogo">
+  <div class="section-title reveal">
+    <h2>Nuestro <span>Catálogo</span></h2>
+    <div class="divider"></div>
+    <p>Elige el tamaño y estilo perfecto para tu antojo del día</p>
+  </div>
+
+  <div class="tabs reveal">
+    <button class="tab-btn active" onclick="switchTab('normales')">🍓 Normales</button>
+    <button class="tab-btn" onclick="switchTab('especiales')">🌸 Días Especiales</button>
+    <button class="tab-btn" onclick="switchTab('premium')">✨ Premium</button>
+  </div>
+
+  <!-- NORMALES -->
+  <div class="tab-panel active" id="tab-normales">
+    <div class="card reveal">
+      <span class="card-emoji">🍓</span>
+      <h3>Mini Fresa</h3>
+      <p>Porción individual perfecta para un antojito rápido. Con crema suave y azúcar al gusto.</p>
+      <span class="card-price">Desde $4.500</span>
+    </div>
+    <div class="card reveal">
+      <span class="card-emoji">🍓🍓</span>
+      <h3>Fresa Clásica</h3>
+      <p>La combinación perfecta: fresas frescas, crema chantilly y un toque de leche condensada.</p>
+      <span class="card-price">Desde $7.000</span>
+    </div>
+    <div class="card reveal">
+      <span class="card-emoji">🫙</span>
+      <h3>Fresa en Vaso</h3>
+      <p>Capas de fresa, crema y granola en un vaso elegante. Ideal para llevar.</p>
+      <span class="card-price">Desde $9.000</span>
+    </div>
+    <div class="card reveal">
+      <span class="card-emoji">🍓🧁</span>
+      <h3>Fresa con Brownie</h3>
+      <p>Brownie de chocolate con fresas frescas y crema. El dúo perfecto.</p>
+      <span class="card-price">Desde $11.000</span>
+    </div>
+  </div>
+
+  <!-- ESPECIALES -->
+  <div class="tab-panel" id="tab-especiales">
+    <div class="card reveal">
+      <span class="badge-special">ESPECIAL</span>
+      <span class="card-emoji">💝</span>
+      <h3>Fresa San Valentín</h3>
+      <p>Corazones de fresa con crema rosada, chispas de corazón y mensaje personalizado.</p>
+      <span class="card-price">Desde $18.000</span>
+    </div>
+    <div class="card reveal">
+      <span class="badge-special">ESPECIAL</span>
+      <span class="card-emoji">🎂</span>
+      <h3>Fresa Cumpleaños</h3>
+      <p>Copa decorada festivamente con tu nombre, vela y los mejores toppings.</p>
+      <span class="card-price">Desde $15.000</span>
+    </div>
+    <div class="card reveal">
+      <span class="badge-special">ESPECIAL</span>
+      <span class="card-emoji">🌸</span>
+      <h3>Fresa Día de la Madre</h3>
+      <p>Presentación especial con flores comestibles, crema de vainilla y fresa entera.</p>
+      <span class="card-price">Desde $20.000</span>
+    </div>
+    <div class="card reveal">
+      <span class="badge-special">ESPECIAL</span>
+      <span class="card-emoji">🎄</span>
+      <h3>Fresa Navideña</h3>
+      <p>Copa navideña con crema verde y roja, fresas cubiertas de chocolate blanco.</p>
+      <span class="card-price">Desde $17.000</span>
+    </div>
+  </div>
+
+  <!-- PREMIUM -->
+  <div class="tab-panel" id="tab-premium">
+    <div class="card reveal">
+      <span class="badge-premium">PREMIUM</span>
+      <span class="card-emoji">👑</span>
+      <h3>Royal Strawella</h3>
+      <p>La experiencia suprema: fresas orgánicas, crema belga, chocolate artesanal y toppings premium.</p>
+      <span class="card-price">Desde $28.000</span>
+    </div>
+    <div class="card reveal">
+      <span class="badge-premium">PREMIUM</span>
+      <span class="card-emoji">🍫</span>
+      <h3>Chocolate Noir</h3>
+      <p>Fresas cubiertas de chocolate negro 70%, crema de avellana y ganache artesanal.</p>
+      <span class="card-price">Desde $25.000</span>
+    </div>
+    <div class="card reveal">
+      <span class="badge-premium">PREMIUM</span>
+      <span class="card-emoji">🥂</span>
+      <h3>Cheesecake Fresa</h3>
+      <p>Base de galleta, cheesecake cremoso con coulis de fresa natural y decoración elegante.</p>
+      <span class="card-price">Desde $26.000</span>
+    </div>
+    <div class="card reveal">
+      <span class="badge-premium">PREMIUM</span>
+      <span class="card-emoji">✨</span>
+      <h3>Box Strawella VIP</h3>
+      <p>Caja personalizada para 4 personas con 3 tipos de fresas, salsas y toppings a elegir.</p>
+      <span class="card-price">Desde $65.000</span>
+    </div>
+  </div>
+</section>
+
+<!-- TOPPINGS -->
+<section id="toppings">
+  <div class="section-title reveal">
+    <h2>Toppings & <span>Extras</span></h2>
+    <div class="divider"></div>
+    <p>Personaliza tu pedido con estos deliciosos complementos</p>
+  </div>
+  <div class="topping-grid">
+    <div class="topping-chip reveal"><span class="t-icon">🍫</span><div class="t-name">Chispas de Choco</div><div class="t-price">+$1.500</div></div>
+    <div class="topping-chip reveal"><span class="t-icon">🥜</span><div class="t-name">Maní Caramelizado</div><div class="t-price">+$2.000</div></div>
+    <div class="topping-chip reveal"><span class="t-icon">🌰</span><div class="t-name">Granola Artesanal</div><div class="t-price">+$1.500</div></div>
+    <div class="topping-chip reveal"><span class="t-icon">🍬</span><div class="t-name">Mini Marshmallows</div><div class="t-price">+$1.000</div></div>
+    <div class="topping-chip reveal"><span class="t-icon">🧁</span><div class="t-name">Sprinkles Mágicos</div><div class="t-price">+$1.000</div></div>
+    <div class="topping-chip reveal"><span class="t-icon">🍯</span><div class="t-name">Miel de Abejas</div><div class="t-price">+$2.000</div></div>
+    <div class="topping-chip reveal"><span class="t-icon">🍪</span><div class="t-name">Oreo Triturado</div><div class="t-price">+$2.000</div></div>
+    <div class="topping-chip reveal"><span class="t-icon">🥥</span><div class="t-name">Coco Rallado</div><div class="t-price">+$1.500</div></div>
+    <div class="topping-chip reveal"><span class="t-icon">🍦</span><div class="t-name">Crema Extra</div><div class="t-price">+$2.500</div></div>
+    <div class="topping-chip reveal"><span class="t-icon">🍓</span><div class="t-name">Salsa de Fresa</div><div class="t-price">+$2.000</div></div>
+    <div class="topping-chip reveal"><span class="t-icon">🫐</span><div class="t-name">Arándanos Frescos</div><div class="t-price">+$3.000</div></div>
+    <div class="topping-chip reveal"><span class="t-icon">🍭</span><div class="t-name">Leche Condensada</div><div class="t-price">+$1.500</div></div>
+  </div>
+</section>
+
+<!-- UBICACIÓN -->
+<section id="ubicacion">
+  <div class="section-title reveal">
+    <h2>¿Dónde <span>Encontrarnos?</span></h2>
+    <div class="divider"></div>
+    <p>Ven a disfrutar en nuestro punto o pide a domicilio</p>
+  </div>
+  <div class="ubicacion-inner">
+    <div class="map-placeholder reveal">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3921.123456789!2d-74.7964!3d11.0041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42e3e3e3e3e3f%3A0x0!2sCalle+72+%2344-50%2C+Barranquilla%2C+Atl%C3%A1ntico!5e0!3m2!1ses!2sco!4v1713700000000!5m2!1ses!2sco"
+        width="100%" height="100%" style="border:0; border-radius:20px;"
+        allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+    <div style="text-align:center;margin-top:.8rem;" class="reveal">
+      <a
+        href="https://maps.google.com/?q=Calle+72+%2344-50,+Barranquilla,+Colombia"
+        target="_blank"
+        class="btn btn-primary"
+        style="display:inline-flex;align-items:center;gap:.5rem;font-size:.9rem;">
+        📍 Abrir en Google Maps
+      </a>
+    </div>
+    <div class="info-card reveal">
+      <h3>🍓 Strawella</h3>
+      <div class="info-row">
+        <span class="info-icon">📍</span>
+        <p><strong>Dirección:</strong> Calle 72 #44-50<br>Barranquilla, Atlántico, Colombia</p>
+      </div>
+      <div class="info-row">
+        <span class="info-icon">🕐</span>
+        <p><strong>Horario:</strong> Lunes a Sábado<br>10:00 AM – 8:00 PM<br>Domingos: 11:00 AM – 6:00 PM</p>
+      </div>
+      <div class="info-row">
+        <span class="info-icon">📱</span>
+        <p><strong>WhatsApp / Pedidos:</strong><br>+57 300 000 0000</p>
+      </div>
+      <div class="info-row">
+        <span class="info-icon">🛵</span>
+        <p><strong>Domicilios disponibles</strong> en toda Barranquilla.<br>Pedido mínimo $15.000</p>
+      </div>
+      <div class="info-row">
+        <span class="info-icon">📸</span>
+        <p><strong>Instagram:</strong> @strawella.col</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NOSOTROS -->
+<section id="nosotros">
+  <div class="section-title reveal">
+    <h2>Nuestra <span>Historia</span></h2>
+    <div class="divider"></div>
+    <p>Pasión, amor y fresas en cada porción</p>
+  </div>
+  <div class="about-inner" style="max-width:860px;margin:0 auto;">
+    <div class="about-card reveal">
+      <h3>🎯 Misión</h3>
+      <p>En <strong>Strawella</strong> nuestra misión es brindar una experiencia gastronómica única y memorable a través de fresas con crema artesanales, elaboradas con ingredientes frescos y naturales de la más alta calidad. Nos comprometemos a deleitar a nuestros clientes con sabores auténticos, presentaciones creativas y un servicio cálido que convierta cada compra en un momento especial lleno de alegría y dulzura.</p>
+    </div>
+    <div class="about-card reveal">
+      <h3>🌟 Razón de Ser</h3>
+      <p><strong>Strawella</strong> nació de un sueño compartido: crear un espacio donde lo simple se convierta en extraordinario. Inspirados en los sabores de la infancia y en el poder de los pequeños placeres de la vida, fundamos esta empresa con la convicción de que una buena fresa con crema puede alegrar el día de cualquier persona. Queremos ser parte de los momentos que más importan.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EQUIPO -->
+<section id="equipo">
+  <div class="section-title reveal">
+    <h2>Nuestro <span>Equipo</span></h2>
+    <div class="divider"></div>
+    <p>Las personas detrás de cada deliciosa porción</p>
+  </div>
+  <div class="team-grid">
+    <div class="member-card reveal">
+      <div class="avatar">👑</div>
+      <h4>Sebastián Reyes</h4>
+      <span class="role-badge">Líder</span>
+    </div>
+    <div class="member-card reveal">
+      <div class="avatar">👩‍🍳</div>
+      <h4>Stefany Ramos</h4>
+      <span class="role-badge">Cocinera</span>
+    </div>
+    <div class="member-card reveal">
+      <div class="avatar">📣</div>
+      <h4>Grey Pla</h4>
+      <span class="role-badge">Influencer & Marketing</span>
+    </div>
+    <div class="member-card reveal">
+      <div class="avatar">📊</div>
+      <h4>Lucho</h4>
+      <span class="role-badge">Análisis de Compras</span>
+    </div>
+    <div class="member-card reveal">
+      <div class="avatar">💼</div>
+      <h4>Shelena Paredes</h4>
+      <span class="role-badge">Administradora</span>
+    </div>
+    <div class="member-card reveal">
+      <div class="avatar">🔍</div>
+      <h4>Juan Polo</h4>
+      <span class="role-badge">Supervisor</span>
+    </div>
+    <div class="member-card reveal">
+      <div class="avatar">🛍️</div>
+      <h4>Miguel Padilla</h4>
+      <span class="role-badge">Vendedor</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="social-row">
+    <a class="social-btn" href="#">📸 Instagram</a>
+    <a class="social-btn" href="#">💬 WhatsApp</a>
+    <a class="social-btn" href="#">🎵 TikTok</a>
+  </div>
+  <p>© 2026 <strong>Strawella</strong> — Fresas con Crema Artesanales · Barranquilla, Colombia 🍓</p>
+  <p style="margin-top:.5rem;font-size:.75rem;opacity:.6">Hecho con ❤️ y muchas fresas</p>
+</footer>
+
+<script>
+  // ── BUBBLES ──
+  (function(){
+    const container = document.getElementById('bubblesContainer');
+    const colors = ['#f7a8c4','#d4b8f0','#b8eed6','#ffd4b8','#fce4ef'];
+    for(let i=0;i<18;i++){
+      const b = document.createElement('div');
+      b.className = 'bubble';
+      const size = Math.random()*80+20;
+      b.style.cssText = `
+        width:${size}px; height:${size}px;
+        background:${colors[Math.floor(Math.random()*colors.length)]};
+        left:${Math.random()*100}%;
+        animation-duration:${Math.random()*14+10}s;
+        animation-delay:${Math.random()*-20}s;
+      `;
+      container.appendChild(b);
+    }
+  })();
+
+  // ── TABS ──
+  function switchTab(name){
+    document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));
+    event.currentTarget.classList.add('active');
+    const panel = document.getElementById('tab-'+name);
+    panel.classList.add('active');
+    panel.querySelectorAll('.reveal').forEach(el=>{
+      el.classList.remove('visible');
+      setTimeout(()=>el.classList.add('visible'),50);
+    });
+  }
+
+  // ── SCROLL REVEAL ──
+  const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting) e.target.classList.add('visible');
+    });
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
